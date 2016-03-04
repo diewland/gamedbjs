@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>gameDB.js</title>
+    </head>
+    <body>
+        <div id='dashboard'></div>
+
+        <script type='text/javascript' src='gamedb.js'></script>
+        <script type='text/javascript'>
+                
+            // title is require field
+            var data = [
+                { title: '[ {}, {}, {}, .. ] <-- db', },
+                { title: 'Instant Search', },
+                { title: 'Checkbox Selection', },
+                { title: 'Programmer-friendly', },
+                { title: "Conflict-Free JS library", },
+                { title: "Ex. <a href='./dbz.html'>DBZ Skill Compare</a>", },
+            ];
+
+            var dashboard = document.getElementById('dashboard');
+            var demo = new gameDB(
+                'gameDB.js',    // title
+                data,           // data
+                dashboard       // dashboard
+            );
+            demo.make();
+
+        </script>
+    </body>
+</html>
